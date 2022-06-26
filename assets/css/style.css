@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neuton:wght@400;700;800&family=Playfair+Display:wght@712;900&family=Rozha+One&family=Volkhov&family=Work+Sans:wght@529&display=swap');
+
+
+
+.header{
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+
+#header_index_nosotras{
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+#nav__logo{
+    border-radius: 45%;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    padding-left: 0.5rem;
+}
+
+.navbar__container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+ul li a{
+    padding: 1em;
+    text-decoration: none;
+    color: #c06c28;
+    font-weight: 550;
+    text-shadow: 1px 1px 2px #4d4a4a;
+}
+
+.menu__item, .submenu__item{
+    list-style-type: none;
+    
+}
+
+.submenu__item{
+    padding: 0.2rem;
+}
+
+.menu__link, .submenu__link{
+    text-decoration: none;
+    color:#c06c28;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+.menu__item:hover .submenu{
+    display: block;
+    
+}
+
+
+a:hover{
+    color: #B75200;
+    cursor: pointer;
+}
+
+#nav__insta{
+    padding-right: 0.5rem;
+}
+
+
+
+.main__index{
+    background-image: radial-gradient(circle, #f3bfe7, #e6c0ec, #d8c1ee, #cac1ef, #bdc2ee, #b6c8f1, #b2cef1, #afd3f1, #b6dff4, #c1eaf7, #d0f5f9, #e1fffd);
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "texto";
+}
+
+
+#index__title{
+    grid-area: title;
+    text-align: center;
+    color: #E56800;
+    font-size: 5rem ;
+    padding: 1.7em;
+}
+
+div h1{
+    font-family: 'Rozha One', serif;
+    font-weight: 900px;
+}
+
+.main__section{
+    grid-area: texto;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4rem ;
+    font-weight: 900px;
+    text-align: right;
+    padding: 1em 1em 3em 2em;
+}
+
+.section__span{
+    color: #a156c4;
+}
+
+
+
+
+#main__nosotras{
+    background-image: radial-gradient(circle, #ff4b00, #ea3e02, #d53103, #c02404, #ab1603, #990d07, #880508, #760008, #62000b, #4f010a, #3b0306, #2a0000);
+    display: flex;
+    flex-direction: column;
+}
+
+.back__nosotras{
+    background-image: radial-gradient(circle, #ff4b00, #ea3e02, #d53103, #c02404, #ab1603, #990d07, #880508, #760008, #62000b, #4f010a, #3b0306, #2a0000);
+}
+
+.nosotras__div__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div__colaboradores{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+.article__colaboradores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section article ul{
+    text-align: center;
+}
+
+#title__nosotras{
+    font-family: 'Rozha One', serif;
+    font-size: 5rem ;
+    font-weight: 900px;
+    color:white;
+    padding: 1.5em;
+}
+
+
+
+.img_nosotras{
+    width: 14.6vw;
+    height: 17.3vw;
+    border-radius: 1rem;
+}
+
+article a{
+    font-family: 'Rozha One', serif;
+    font-size: 2rem ;
+    color:#cb99c9;
+}
+
+article h3{
+    font-family: 'Rozha One', serif;
+    font-size: 3rem ;
+    font-weight: 900px;
+    color:white;
+    padding: 0.5em;
+}
+
+article p{
+    font-family: 'Rozha One', serif;
+    font-size: 2rem ;
+    color:white;
+}
+
+article ul li{
+    font-family: 'Rozha One', serif;
+    font-size: 2rem ;
+    color:white;
+    list-style: none;
+}
+
+h2{
+    font-family: 'Rozha One', serif;
+    font-size: 5rem ;
+    font-weight: 900px;
+    color:white;
+    padding: 1.5em;
+}
+
+h3{
+    font-family: 'Rozha One', serif;
+    font-size: 4rem ;
+    font-weight: 900px;
+    color:black;
+}
+
+.back_contacto_trabaja{
+    width: 100%;
+    height: 100%;
+    filter: contrast(150%) brightness(100%);
+    background-image: radial-gradient(circle, #6e64e7, #7f5de4, #8f54df, #9d4bda, #ab3fd3, #aa31bf, #a723ac, #a31299, #8e0379, #77005c, #5e0042, #46002c);
+}
+
+.back_proyectos{
+    background-image: radial-gradient(circle, #43c67e, #06c79a, #00c7b3, #00c6c7, #00c4d6, #00b4d4, #00a4cf, #0094c8, #0073af, #005493, #123575, #191654);
+}
+
+.back_prensa{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "item1"
+    "item2"
+    "footer";
+    background-image: radial-gradient(circle, #ab59c6, #c140a7, #cc2583, #cd055f, #c6003a, #b40228, #a10518, #8e0806, #740c08, #5c0e07, #440d04, #2d0b00);
+}
+
+.title__pag{
+    font-family: 'Rozha One', serif;
+    font-size: 4rem;
+    font-weight: 900px;
+    color:gray;
+    
+}
+
+#title__nosotras{
+    font-family: 'Rozha One', serif;
+    font-size: 4rem ;
+    font-weight: 900px;
+    color:white;
+    padding: 1.5em;
+}
+
+
+
+.prensa_title{
+    color: #d29fe9;
+}
+
+header{
+    grid-area: header;
+}
+
+.item1{
+    grid-area: item1;
+    padding: 2rem;
+}
+
+.item2{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(4,1fr);
+    grid-area: item2;
+}
+
+.prensa_title{
+    font-size: 4em;
+}
+
+main section article a{
+    font-size: 3em;
+    text-decoration: none;
+}
+
+main section article{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content:center;
+    align-items: center;
+}
+
+.art1__img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.art2__img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.art3__img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.art4__img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.div__cont{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.contacto__form{    
+    display: flex;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;        
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+section form div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+
+
+.div__trab{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.trabaja__form{    
+    display: flex;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;        
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+section form div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+}
+
+footer a{
+    font-size: 1rem;
+    padding: 1.5em 1em 10px 1em;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 1rem;
+    padding: 1.5em 1em 10px 1em;
+}
+
+.insta_white{
+    color: #d29fe9;
+}
+
+
+
+@media screen and (min-width: 960px) {
+    .item2{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:repeat(2,1fr);
+        grid-area: item2;
+    }
+    .art1__img{
+        width: 70%;
+    height: auto;
+    border-radius: 1rem;
+    }
+    
+    .art2__img{
+        width: 50%;
+        height: auto;
+        border-radius: 1rem;
+    }
+    
+    .art3__img{
+        width: 70%;
+        height: auto;
+        border-radius: 1rem;
+    }
+    
+    .art4__img{
+        width: 60%;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main__section{
+        grid-area: texto;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2rem ;
+        font-weight: 900px;
+        text-align: right;
+        padding: 1em 1em 3em 2em;
+    }
+}
