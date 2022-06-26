@@ -134,8 +134,21 @@ div h1{
     padding: 1em 1em 3em 2em;
 }
 
+@keyframes span_animation {
+    0% {color:#a156c4;}
+    25% {color:#ff7400;}
+    50% {color:#008000;}
+    75% {color:#f63737;}
+    100% {color:#a156c4;}
+}
+
 .section__span{
     color: #a156c4;
+    animation-name: span_animation;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
 
 
@@ -181,12 +194,16 @@ section article ul{
     padding: 1.5em;
 }
 
-
-
 .img_nosotras{
     width: 14.6vw;
     height: 17.3vw;
     border-radius: 1rem;
+    transition: width 2s, height 2s;
+}
+
+.img_nosotras:hover{
+    width: 21.9vw;
+    height: 25.95vw;
 }
 
 article a{
