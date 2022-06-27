@@ -14,35 +14,35 @@
 </head>
 <body>
     <header id="header_index_nosotras" > 
-        <nav class="navbar__container">
-            <a href="./index.html"> <img src="./assets/img/bebas-logo-r.jpg" alt="BEBAS logo" width="80" height="80" id="nav__logo"> </a>
-            <ul class="menu">
-                <li>
-                    <a href="#main__nosotras">Nosotras</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="./assets/img/bebas-logo-r.jpg" alt="BEBAS LOGO"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Nosotras<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./assets/pages/proyectos.html">Proyectos</a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="./assets/pages/proyectos.html#container__artistas">Artistas</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="./assets/pages/proyectos.html#container__ultimos">Ultimos Videos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="./assets/pages/proyectos.html#container__premiados">Premiados</a>
-                        </li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Proyectos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Artistas</a>
+                      <a class="dropdown-item" href="#">Ultimos Videos</a>
+                      <a class="dropdown-item" href="#">Premiados</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prensa</a>
                 </li>
-                <li>
-                    <a href="./assets/pages/prensa.html">Prensa</a>
-                </li>
-                <li>
-                    <a href="./assets/pages/contacto.html">Contacto</a>
-                </li>
-            </ul>  
-            <a id="nav__insta" href="https://instagram.com/bebas.tv?igshid=NDBlY2NjN2I=" target="_blank"><i class="fa-brands fa-instagram fa-2xl"> </i> </a>
-        </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <main>
         <div class="main__index">
@@ -90,7 +90,7 @@
         </div>
 
     </main>
-    <footer class="back__nosotras">
+    <footer class="back__nosotras d-flex justify-content-sm-center justify-content-md-center justify-content-xl-center justify-content-lg-center">
         <a href="./assets/pages/trabaja.html"> Trabaja con Nosotras </a>
         <p> Copyright © </p>
         <a href="./assets/pages/contacto.html"> Contacto </a>
