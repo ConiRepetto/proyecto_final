@@ -8,7 +8,8 @@
 
 
 
-header{
+
+.header{
     background: rgba( 255, 255, 255, 0 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
@@ -28,7 +29,10 @@ header{
     position: fixed;
 }
 
-
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
 
 .navbar-brand{
     border-radius: 45%;
@@ -41,7 +45,8 @@ header{
 
 
 #nav__insta{
-    padding-right: 0.5rem;
+    padding: 1rem;
+    color: #E56800;
 }
 
 
