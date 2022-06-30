@@ -7,31 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neuton:wght@400;700;800&family=Playfair+Display:wght@712;900&family=Rozha+One&family=Volkhov&family=Work+Sans:wght@529&display=swap');
 
 
-
-
 .header{
-    background: rgba( 255, 255, 255, 0 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
+    background: rgba( 255, 255, 255, 0 )!important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
+    backdrop-filter: blur( 0px )!important;
+    -webkit-backdrop-filter: blur( 0px )!important;
     border-radius: 10px;
-    position: relative;
+    position:relative;
     width: 100%;
-}
-
-#header_index_nosotras{
-    background: rgba( 255, 255, 255, 0 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    width: 100%;
-    position: fixed;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-around;
 }
 
 .navbar-brand{
@@ -108,9 +91,7 @@ div h1{
     flex-direction: column;
 }
 
-.back__nosotras{
-    background-image: radial-gradient(circle, #ff4b00, #ea3e02, #d53103, #c02404, #ab1603, #990d07, #880508, #760008, #62000b, #4f010a, #3b0306, #2a0000);
-}
+
 
 .nosotras__div__section{
     display: flex;
@@ -371,15 +352,31 @@ footer a{
     font-size: 1rem;
     padding: 1.5em 1em 10px 1em;
     text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: rgb(68, 14, 66);
 }
 
 footer p{
     font-size: 1rem;
     padding: 1.5em 1em 10px 1em;
+    color: black;
 }
 
 .insta_white{
     color: #d29fe9;
+}
+
+.carousel{
+    width: fit-content;
+    height: fit-content;
+}
+
+.img_proyectos{
+width: 50vw;
+height: auto;
 }
 
 
