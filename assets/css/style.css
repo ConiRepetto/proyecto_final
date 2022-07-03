@@ -53,6 +53,12 @@
     font-size: 1.5em;
 }
 
+.menu_white{
+    color: white;
+}
+
+
+
 ul li a{
     padding: 1em;
     text-decoration: none;
