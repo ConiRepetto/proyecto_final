@@ -78,10 +78,13 @@ ul li a{
 }
 
 
+
 a:hover{
     color: #B75200;
     cursor: pointer;
 }
+
+
 
 #nav__insta{
     padding: 1rem;
@@ -90,17 +93,13 @@ a:hover{
 
 
 
-.main__index{
+.back__index{
     background-image: radial-gradient(circle, #f3bfe7, #e6c0ec, #d8c1ee, #cac1ef, #bdc2ee, #b6c8f1, #b2cef1, #afd3f1, #b6dff4, #c1eaf7, #d0f5f9, #e1fffd);
-    display: grid;
-    grid-template-areas: 
-    "title"
-    "texto";
+
 }
 
 
 #index__title{
-    grid-area: title;
     text-align: center;
     color: #E56800;
     font-size: 5rem ;
@@ -141,7 +140,7 @@ div h1{
 
 
 
-#main__nosotras{
+.back_nosotras{
     background-image: radial-gradient(circle, #ff4b00, #ea3e02, #d53103, #c02404, #ab1603, #990d07, #880508, #760008, #62000b, #4f010a, #3b0306, #2a0000);
     display: flex;
     flex-direction: column;
@@ -153,6 +152,13 @@ div h1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.nosotras__div__article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .div__colaboradores{
@@ -167,7 +173,7 @@ div h1{
     justify-content: center;
 }
 
-section article ul{
+.ul__nosotras{
     text-align: center;
 }
 
@@ -180,24 +186,24 @@ section article ul{
 }
 
 .img_nosotras{
-    width: 14.6vw;
-    height: 17.3vw;
+    width: 20vw;
+    height: auto;
     border-radius: 1rem;
     transition: width 2s, height 2s;
 }
 
 .img_nosotras:hover{
-    width: 21.9vw;
-    height: 25.95vw;
+    width: 25vw;
+    height: auto;
 }
 
-article a{
+.insta__nosotras{
     font-family: 'Rozha One', serif;
     font-size: 2rem ;
     color:#cb99c9;
 }
 
-article h3{
+h3{
     font-family: 'Rozha One', serif;
     font-size: 3rem ;
     font-weight: 900px;
@@ -211,7 +217,13 @@ article p{
     color:white;
 }
 
-article ul li{
+.nosotras__article__bio{
+    font-family: 'Rozha One', serif;
+    font-size: 2rem ;
+    color:white;
+}
+
+.ul__nosotras{
     font-family: 'Rozha One', serif;
     font-size: 2rem ;
     color:white;
@@ -257,9 +269,7 @@ h3{
 .title__pag{
     font-family: 'Rozha One', serif;
     font-size: 4rem;
-    font-weight: 900px;
-    color:gray;
-    
+    font-weight: 900px;    
 }
 
 #title__nosotras{
@@ -272,8 +282,9 @@ h3{
 
 
 
-.prensa_title{
+h2{
     color: #d29fe9;
+    
 }
 
 header{
@@ -299,6 +310,7 @@ header{
 main section article a{
     font-size: 3em;
     text-decoration: none;
+    color:#cb99c9;
 }
 
 main section article{
@@ -421,6 +433,10 @@ footer p{
     color: black;
 }
 
+.footer__white{
+    color: white;
+}
+
 .insta_white{
     color: #d29fe9;
 }
@@ -435,6 +451,28 @@ width: 50vw;
 height: auto;
 }
 
+
+@media screen and (max-width: 960px) {
+
+    .img_nosotras{
+        width: 90vw;
+        height: auto;
+        border-radius: 1rem;
+        transition: width 2s, height 2s;
+    }
+    
+    .img_nosotras:hover{
+        width: 95vw;
+        height: auto;
+    }
+    
+    .insta__nosotras{
+        font-family: 'Rozha One', serif;
+        font-size: 2rem ;
+        color:#cb99c9;
+    }
+
+}
 
 
 @media screen and (min-width: 960px) {
