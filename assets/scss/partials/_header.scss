@@ -1,0 +1,25 @@
+header{
+    @include flex (row, space-around, center );
+    padding: $small;
+    width: 100%;
+    .nav-link{
+        color: $secundario;
+        font-size: $small;
+        &:hover{
+            color: $principal;
+        }
+    }
+
+    .container-fluid{
+        @include flex (row, space-around, center );
+        width: 100%;
+        padding: $xsmall;
+    }
+    
+    .navbar-brand{
+        border-radius: 45%;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+}

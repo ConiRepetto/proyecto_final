@@ -1,0 +1,17 @@
+main{
+    width: 100%;
+    h2{
+        font-family: $fuente-titulos;
+        font-size: $medium;
+        color: $principal
+    }    
+    .contacto__form{
+        @include flex (column, space-around, center );
+        padding: $small;
+        font-size: $xsmall;
+        }
+    form div{
+        padding: $small;
+    }
+}
+
