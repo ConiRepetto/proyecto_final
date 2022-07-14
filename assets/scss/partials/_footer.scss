@@ -1,0 +1,25 @@
+footer{
+    padding: $small;
+    align-items: flex-end;
+}
+    footer a{
+        padding: 1.5em 1em 10px 1em;
+        text-decoration: none;
+        color: $link-color;
+        font-size: $xsmall;
+        font-family: $fuente-cuerpo;
+        &:hover{
+            color: rgb(68, 14, 66);
+        }
+    }
+
+    footer p{
+        font-size: $xsmall;
+        font-family: $fuente-cuerpo;
+        color: $link-color;
+    }
+
+    .insta_white{
+    color: #d29fe9;
+}
+

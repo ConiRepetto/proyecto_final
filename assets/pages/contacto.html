@@ -16,7 +16,7 @@
 </head>
 <body class="back_contacto_trabaja">
     <header class="header"> 
-        <nav class="header navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="header navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
                 <a  href="../../index.html"><img src="../img/bebas-logo-r.jpg"class="navbar-brand" alt="BEBAS LOGO"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,35 +53,32 @@
         <div id="title__contacto">
             <h2 class="title__pag">Contactanos</h2>
         </div>
-        <div class="div__cont">
-            <section class="contacto__form">
-                <form action="gracias_enviado.html" method="post">
-                
-                    <div>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre" name="Nombre"/> 
-                    </div> 
-                    <div>
-                        <label for="email">Mail de Contacto</label>
-                        <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com"/>
-                    </div>    
-                    <div>
-                        <label for="consulta"> Tu consulta o propuesta laboral:</label>
-                        <textarea id="consulta" rows="10" cols="50"> </textarea>
-                    </div>    
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Vaciar">
-                    </div>
-                </form>
-            </section>
-    </div>
+        <div class="div__form">
+        <div class="col-lg-4 col-sm-10">
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombre"name="Nombre"/>
+              </div>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail3" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="consulta" class="form-label">Tu consulta o propuesta laboral:</label>
+                <textarea type="text" class="consulta" id="fconsulta"> </textarea>
+              </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        </div>
     </main>
-    <footer class="back__nosotras d-flex justify-content-sm-center justify-content-md-center justify-content-xl-center justify-content-lg-center">
+    <footer class=" d-flex justify-content-sm-center justify-content-md-center justify-content-xl-center justify-content-lg-center">
         <a href="./assets/pages/trabaja.html"> Trabaja con Nosotras </a>
         <p> Copyright © </p>
         <a href="./assets/pages/contacto.html"> Contacto </a>
-        <a href="https://instagram.com/bebas.tv?igshid=NDBlY2NjN2I=" target="_blank"><i class="fa-brands fa-instagram fa-lg insta_white"></i></a>
+        <a href="https://instagram.com/bebas.tv?igshid=NDBlY2NjN2I=" target="_blank"><i class="fa-brands fa-instagram fa-lg insta_black"></i></a>
     </footer>
 </body>
 </html>

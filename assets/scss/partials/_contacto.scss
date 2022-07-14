@@ -3,15 +3,28 @@ main{
     h2{
         font-family: $fuente-titulos;
         font-size: $medium;
-        color: $principal
+        color: $principal;
+        padding: 0.5em 1em 0.5em 0.5em;
     }    
-    .contacto__form{
+    .div__form{
+        display: flex;
+        justify-content: center;
+    }
+
+    form{
         @include flex (column, space-around, center );
         padding: $small;
-        font-size: $xsmall;
+        font-size: $small;
+        font-family: $fuente-cuerpo;
         }
+    
     form div{
-        padding: $small;
+        padding: 0.2em;
     }
+    .btn{
+        font-size: 0.5em;
+        font-family: $fuente-cuerpo;
+    }
+
 }
 

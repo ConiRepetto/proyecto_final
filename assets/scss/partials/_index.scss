@@ -1,0 +1,48 @@
+body{
+    background-image: radial-gradient(circle, #f3bfe7, #e6c0ec, #d8c1ee, #cac1ef, #bdc2ee, #b6c8f1, #b2cef1, #afd3f1, #b6dff4, #c1eaf7, #d0f5f9, #e1fffd);
+}
+
+main{
+    width: 100%;
+    h1{
+        font-family: $fuente-titulos;
+        font-size: $large;
+        color: $secundario;
+        text-align: center;
+    }
+    .main__section{
+        grid-area: texto;
+        text-align: right;
+        padding: 1em 1em 3em 2em;
+    }
+    
+    @keyframes span_animation {
+        0% {color:#a156c4;}
+        25% {color:#ff7400;}
+        50% {color:#008000;}
+        75% {color:#f63737;}
+        100% {color:#a156c4;}
+    }
+    
+    .section__span{
+        color: #a156c4;
+        animation-name: span_animation;
+        animation-iteration-count: infinite ;
+        animation-timing-function: linear;
+        animation-duration: 4s;
+        animation-delay: 1s;
+    }
+    
+}
+
+
+
+/*MENU font-family: 'Work Sans', sans-serif;
+
+div h1{
+    font-family: 'Rozha One', serif;
+    font-weight: 900px;
+}
+MAIN font-family: 'Work Sans', sans-serif;
+font-size: 4rem ;
+font-weight: 900px;*/
