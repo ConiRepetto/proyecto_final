@@ -13,8 +13,8 @@
     backdrop-filter: blur( 0px )!important;
     -webkit-backdrop-filter: blur( 0px )!important;
     border-radius: 10px;
-
     position: sticky;
+    z-index: 3;
     top: 0;
     width: 100%;
 }
@@ -38,7 +38,10 @@
     color: white;
 }
 
-
+a{
+    text-decoration: none;
+    color: #000000;
+}
 
 ul li a{
     padding: 1em;
@@ -79,9 +82,7 @@ ul li a{
 }
 
 
-
 a:hover{
-    color: #B75200;
     cursor: pointer;
 }
 
@@ -109,15 +110,16 @@ a:hover{
     padding: 0.5em 1em 0.5em 0.5em;
 }
 
-
-
 .main__section{
     grid-area: texto;
+    text-align: right;
+    padding: 0em 1em 1em 1em;
+}
+
+div section p{
     font-family: 'Work Sans', sans-serif;
     font-size: 4rem ;
     font-weight: 0;
-    text-align: right;
-    padding: 0em 1em 1em 1em;
 }
 
 @keyframes span_animation {
@@ -137,16 +139,11 @@ a:hover{
     animation-delay: 1s;
 }
 
-
-
-
 .back_nosotras{
     background-image: radial-gradient(circle, #ff4b00, #ea3e02, #d53103, #c02404, #ab1603, #990d07, #880508, #760008, #62000b, #4f010a, #3b0306, #2a0000);
     display: flex;
     flex-direction: column;
 }
-
-
 
 .nosotras__div__section{
     display: flex;
@@ -190,51 +187,40 @@ a:hover{
 }
 
 .insta__nosotras{
-    font-family: 'Rozha One', serif;
     font-size: 2rem ;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
     color:#cb99c9;
 }
 
-h3{
-    font-family: 'Rozha One', serif;
-    font-size: 3rem ;
-    font-weight: 900px;
-    color:white;
-    padding: 0.5em;
-}
-
 article p{
-    font-family: 'Rozha One', serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem ;
     color:white;
 }
 
 .nosotras__article__bio{
-    font-family: 'Rozha One', serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem ;
     color:white;
 }
 
 .ul__nosotras{
-    font-family: 'Rozha One', serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem ;
     color:white;
     list-style: none;
 }
 
-h2{
-    font-family: 'Rozha One', serif;
-    font-size: 5rem ;
-    font-weight: 900px;
-    color:white;
-    padding: 1.5em;
-}
+
 
 h3{
-    font-family: 'Rozha One', serif;
-    font-size: 4rem ;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem ;
     font-weight: 900px;
-    color:black;
+    font-weight: 900px;
+    padding: 0.5em;
+    color:white;
 }
 
 .back_contacto_trabaja{
@@ -258,9 +244,9 @@ h3{
     background-image: radial-gradient(circle, #ab59c6, #c140a7, #cc2583, #cd055f, #c6003a, #b40228, #a10518, #8e0806, #740c08, #5c0e07, #440d04, #2d0b00);
 }
 
-.title__pag{
+h2{
     font-family: 'Rozha One', serif;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 900px;
     padding: 0.5em 1em 0.5em 0.5em;
     color: #d29fe9;   
@@ -286,6 +272,89 @@ header{
 .prensa_title{
     font-size: 4em;
 }
+
+.prensa__section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container__card{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.card_prensa{
+    padding: 1rem;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+}
+
+div p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem ;
+}
+
+h5{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem ;
+}
+
+.cta {
+    border: none;
+    background: none;
+   }
+   
+   .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
 
 main section article a{
     font-size: 3em;
