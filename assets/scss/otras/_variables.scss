@@ -1,8 +1,11 @@
 /*Colores*/
-$principal: #a156c4;
-$secundario: #c06c28;
-$text-color1: white;
-$link-color:black;
+$principal: #c06c28;
+$secundario: #a156c4;
+$text-color-w: white;
+$text-color-b:black;
+$hover-color: #4d0000;
+$menu-color: #686868;
+$resaltar-color: #cb99c9;
 
 /*Espaciados*/
 $large: 4rem;
@@ -10,13 +13,35 @@ $medium: 2.5rem;
 $small: 1.5rem;
 $xsmall: 0.5rem;
 
-/*Feuentes*/
+/*Fuentes*/
 $fuente-titulos:'Rozha One', serif;
 $fuente-cuerpo:'Work Sans', sans-serif;
 $fuente-menu:'Work Sans', sans-serif;
 
-/*Tamaño de fuente*/
-$large: 10em;
-$medium: 5em;
-$small: 3em;
-$xsmall: 2em;
+/*Tamaño de fuente rem o em*/
+$h1-font-size: 10em;
+$xlarge: 8em;
+$large: 4em;
+$medium: 3em;
+$small: 2em;
+$xsmall: 1em;
+$menu-font-size: 1.5em;
+
+
+/*Backgrounds
+$background-header: {background-color: rgba(255, 255, 255, 0)!important; box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
+backdrop-filter: blur( 5px )!important;
+-webkit-backdrop-filter: blur( 5px )!important;
+border-radius: 10px;}
+$background-index: {background-image: radial-gradient(circle, #f3bfe7, #e6c0ec, #d8c1ee, #cac1ef, #bdc2ee, #b6c8f1, #b2cef1, #afd3f1, #b6dff4, #c1eaf7, #d0f5f9, #e1fffd);}
+$background-nosotras: {background-image: radial-gradient(circle, #ff4b00, #ea3e02, #d53103, #c02404, #ab1603, #990d07, #880508, #760008, #62000b, #4f010a, #3b0306, #2a0000);}
+$background-proyectos: {background-image: radial-gradient(circle, #43c67e, #06c79a, #00c7b3, #00c6c7, #00c4d6, #00b4d4, #00a4cf, #0094c8, #0073af, #005493, #123575, #191654);}
+$background-prensa: {background-image: radial-gradient(circle, #ab59c6, #c140a7, #cc2583, #cd055f, #c6003a, #b40228, #a10518, #8e0806, #740c08, #5c0e07, #440d04, #2d0b00);}
+$background-contacto: {background-image: radial-gradient(circle, #6e64e7, #7f5de4, #8f54df, #9d4bda, #ab3fd3, #aa31bf, #a723ac, #a31299, #8e0379, #77005c, #5e0042, #46002c);
+}
+$background-card: {background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;}
+*/

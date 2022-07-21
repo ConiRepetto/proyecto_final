@@ -1,6 +1,26 @@
-@mixin flex ($direction, $justify, $align){
+
+
+@mixin flex ($direction, $justify, $align-items, $padding){
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
-    align-items: $align;
+    align-items: $align-items;
+    padding: $padding;
+}
+
+@mixin title ($text-align, $padding){
+    font-size: $h1-font-size;
+    font-weight: 900;
+    font-family: $fuente-titulos;
+    text-align: $text-align;
+    padding: $padding;
+    color: $principal;
+}
+
+@mixin texto($font-family, $font-size, $font-weight, $text-align, $color){
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-align: $text-align;
+    color: $color;
 }

@@ -1,6 +1,5 @@
 header{
-    @include flex (row, space-around, center );
-    padding: $small;
+    @include flex (row, space-around, center, $small);
     width: 100%;
     background: rgba( 255, 255, 255, 0 )!important;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
@@ -10,15 +9,15 @@ header{
     position:sticky;
     top:0;
     .nav-link{
-        color: $secundario;
+        color: $menu-color;
         font-size: $small;
         &:hover{
-            color: $secundario;
+            color: $hover-color;
         }
   
     }
     .container-fluid{
-        @include flex (row, space-around, center );
+        @include flex (row, space-around, center, 0);
         width: 100%;
   
     }
@@ -36,15 +35,11 @@ header{
         list-style: none;
         font-size: 1.5em;
     }
-    
-    .menu_white{
-        color: white;
-    }
         
     ul li a{
         padding: 1em;
         text-decoration: none;
-        color: $link-color;
+        color: $text-color-b;
         font-weight: 550;
         text-shadow: 1px 1px 2px #4d4a4a;
     }
@@ -60,7 +55,7 @@ header{
     
     .menu__link, .submenu__link{
         text-decoration: none;
-        color:$link-color;
+        color:$text-color-b;
     }
     
     .submenu{
@@ -80,7 +75,7 @@ header{
     }
 
     a:hover{
-        color: $secundario;
+        color: $hover-color;
         cursor: pointer;
     }
     #nav__insta{

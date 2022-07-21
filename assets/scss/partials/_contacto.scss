@@ -2,8 +2,8 @@ main{
     width: 100%;
     h2{
         font-family: $fuente-titulos;
-        font-size: $medium;
-        color: $principal;
+        font-size: $xlarge;
+        color: $secundario;
         padding: 0.5em 1em 0.5em 0.5em;
     }    
     .div__form{
@@ -12,8 +12,7 @@ main{
     }
 
     form{
-        @include flex (column, space-around, center );
-        padding: $small;
+        @include flex (column, space-around, center, $small);
         font-size: $small;
         font-family: $fuente-cuerpo;
         }

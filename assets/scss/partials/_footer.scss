@@ -5,7 +5,7 @@ footer{
     footer a{
         padding: 1.5em 1em 10px 1em;
         text-decoration: none;
-        color: $link-color;
+        color: $text-color-b;
         font-size: $xsmall;
         font-family: $fuente-cuerpo;
         &:hover{
@@ -16,10 +16,10 @@ footer{
     footer p{
         font-size: $xsmall;
         font-family: $fuente-cuerpo;
-        color: $link-color;
+        color: $text-color-b;
     }
 
     .insta_white{
-    color: #d29fe9;
+    color: $resaltar-color;
 }
 

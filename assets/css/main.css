@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neuton:wght@400;700;800&family=Playfair+Display:wght@712;900&family=Rozha+One&family=Volkhov&family=Work+Sans:wght@529&family=Berkshire+Swash&family=Yeseva+One&display=swap');
 
 
-.header{
+header{
     background: rgba( 255, 255, 255, 0 )!important;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
     backdrop-filter: blur( 5px )!important;
@@ -17,10 +17,18 @@
     z-index: 3;
     top: 0;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav{
-    width: 100%;
+
+
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .navbar-brand{
@@ -29,17 +37,6 @@ header nav{
     width: 4rem;
     height: 4rem;
     padding-left: 0.5rem;
-}
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    font-size: 1.5em;
-}
-
-.menu_white{
-    color: white;
 }
 
 a{
@@ -109,7 +106,7 @@ a:hover{
     text-align: center;
     color: #E56800;
     font-family: 'Rozha One', serif;
-    font-size: 10rem ;
+    font-size: 10em ;
     font-weight: 900;
     padding: 0.2em 0 0.5em 0;
 }
@@ -222,7 +219,6 @@ h3{
     font-family: 'Work Sans', sans-serif;
     font-size: 3rem ;
     font-weight: 900px;
-    font-weight: 900px;
     padding: 0.5em;
     color:white;
 }
@@ -293,7 +289,7 @@ header{
 
 .card_prensa{
     padding: 1rem;
-    background: rgba( 255, 255, 255, 0.15 );
+    background-color: rgba( 255, 255, 255, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
@@ -374,29 +370,6 @@ main section article{
     align-items: center;
 }
 
-.art1__img{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-}
-
-.art2__img{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-}
-
-.art3__img{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-}
-
-.art4__img{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-}
 
 .div__cont{
     display: flex;
@@ -409,7 +382,7 @@ main section article{
     padding: 1rem;
     width: fit-content;
     height: fit-content;        
-    background: rgba( 255, 255, 255, 0.1 );
+    background-color: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6px );
     -webkit-backdrop-filter: blur( 6px );
@@ -451,12 +424,11 @@ section form div{
     padding: 1rem;
     width: fit-content;
     height: fit-content;        
-    background: rgba( 255, 255, 255, 0.1 );
+    background-color: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6px );
     -webkit-backdrop-filter: blur( 6px );
     border-radius: 10px;
-
 }
 
 section form{
@@ -546,6 +518,13 @@ footer p{
     -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
 }
+
+#gracias{
+    text-align: center;
+    padding: 4rem 0 10rem 0;
+}
+
+
 
 @media screen and (max-width: 960px) {
 
