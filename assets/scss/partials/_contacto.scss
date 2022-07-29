@@ -1,9 +1,7 @@
 main{
     width: 100%;
-    h2{
-        font-family: $fuente-titulos;
-        font-size: $xlarge;
-        color: $secundario;
+    h2{ 
+        @include texto($fuente-titulos, $xlarge, 500, left, $secundario);
         padding: 0.5em 1em 0.5em 0.5em;
     }    
     .div__form{

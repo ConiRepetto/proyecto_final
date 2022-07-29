@@ -1,25 +1,39 @@
 footer{
-    padding: $small;
-    align-items: flex-end;
+    padding: $small-esp;
+
 }
+
     footer a{
+        @include texto ($fuente-cuerpo, $xsmall, 100, center, $text-color-b);
         padding: 1.5em 1em 10px 1em;
         text-decoration: none;
         color: $text-color-b;
-        font-size: $xsmall;
-        font-family: $fuente-cuerpo;
         &:hover{
             color: rgb(68, 14, 66);
         }
     }
 
-    footer p{
-        font-size: $xsmall;
-        font-family: $fuente-cuerpo;
-        color: $text-color-b;
+    footer p{ 
+        display: flex;
+        justify-content: center;
+        @include texto ($fuente-cuerpo, $xsmall, 100, center, $text-color-b);
+        padding: 1.5em 1em 10px 1em;
     }
 
     .insta_white{
-    color: $resaltar-color;
-}
+    color: $menu-color;
+    }
 
+@media screen and (max-width: 450px) {
+    footer{
+        padding: 0.1;
+        align-content: center;
+        flex-direction: column;
+    }
+    footer a{
+        padding: 0.2em;
+        }
+    footer p{ 
+        padding: 0.2em
+    }
+}

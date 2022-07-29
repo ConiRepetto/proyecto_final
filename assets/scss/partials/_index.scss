@@ -5,15 +5,13 @@ body{
 main{
     width: 100%;
     h1{
-        font-family: $fuente-titulos;
-        font-size: $large;
-        color: $secundario;
-        text-align: center;
+        @include title (center, 0.5em 0 0.5em 0)
     }
     .main__section{
-        grid-area: texto;
-        text-align: right;
-        padding: 1em 1em 3em 2em;
+            padding: 1em 1em 14em 2em;
+            p{
+            @include texto ($fuente-cuerpo, $large, 200, right, $text-color-b);
+            }
     }
     
     @keyframes span_animation {
@@ -36,13 +34,8 @@ main{
 }
 
 
-
-/*MENU font-family: 'Work Sans', sans-serif;
-
-div h1{
-    font-family: 'Rozha One', serif;
-    font-weight: 900px;
-}
-MAIN font-family: 'Work Sans', sans-serif;
-font-size: 4rem ;
-font-weight: 900px;*/
+/*@media only screen and (min-width: 601px) and (orientation: landscape) {
+    .main__section p{
+        @include texto ($fuente-cuerpo, $large, 200, right, $text-color-b);
+    }
+  }*/

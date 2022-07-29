@@ -1,0 +1,125 @@
+h2{
+    font-family: 'Rozha One', serif;
+    font-size: 5rem;
+    font-weight: 900px;
+    padding: 0.5em 1em 0.5em 0.5em;
+    color: #d29fe9;   
+    align-self: center;
+}
+
+header{
+    grid-area: header;
+}
+
+.item1{
+    grid-area: item1;
+    padding: 2rem;
+}
+
+.item2{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(4,1fr);
+    grid-area: item2;
+}
+
+.prensa_title{
+    font-size: 4em;
+}
+
+.prensa__section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container__card{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.card_prensa{
+    padding: 1rem;
+    background-color: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+}
+
+div p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem ;
+}
+
+h5{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem ;
+}
+
+.cta {
+    border: none;
+    background: none;
+   }
+   
+   .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
+
+main section article a{
+    font-size: 3em;
+    text-decoration: none;
+    color:#cb99c9;
+}
+
+main section article{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content:center;
+    align-items: center;
+}

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neuton:wght@400;700;800&family=Playfair+Display:wght@712;900&family=Rozha+One&family=Volkhov&family=Work+Sans:wght@529&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neuton:wght@400;700;800&family=Playfair+Display:wght@712;900&family=Rozha+One&family=Volkhov&family=Work+Sans:wght@529&family=Berkshire+Swash&family=Yeseva+One&display=swap');
 *::after,
 *::before,
 *{
@@ -24,6 +24,11 @@ a{
     text-decoration: none;
     font-family: $fuente-menu;
     color: $text-color-b;
+}
+
+a:hover{
+    color: $hover-color;
+    cursor: pointer;
 }
 
 img{

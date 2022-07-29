@@ -81,6 +81,9 @@ a{
     display: block;
 }
 
+.dropdown-item:hover{
+    background-color: none;
+}
 
 a:hover{
     cursor: pointer;

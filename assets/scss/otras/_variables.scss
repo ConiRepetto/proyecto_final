@@ -4,14 +4,14 @@ $secundario: #a156c4;
 $text-color-w: white;
 $text-color-b:black;
 $hover-color: #4d0000;
-$menu-color: #686868;
+$menu-color: #A15F20;
 $resaltar-color: #cb99c9;
 
 /*Espaciados*/
-$large: 4rem;
-$medium: 2.5rem;
-$small: 1.5rem;
-$xsmall: 0.5rem;
+$large-esp: 4rem;
+$medium-esp: 2.5rem;
+$small-esp: 1.5rem;
+$xsmall-esp: 0.5rem;
 
 /*Fuentes*/
 $fuente-titulos:'Rozha One', serif;
@@ -44,4 +44,5 @@ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 6.5px );
 -webkit-backdrop-filter: blur( 6.5px );
 border-radius: 10px;}
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neuton:wght@400;700;800&family=Playfair+Display:wght@712;900&family=Rozha+One&family=Volkhov&family=Work+Sans:wght@529&family=Berkshire+Swash&family=Yeseva+One&display=swap');
 */
