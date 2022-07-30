@@ -1,17 +1,16 @@
-body{
-    background-image: radial-gradient(circle, #f3bfe7, #e6c0ec, #d8c1ee, #cac1ef, #bdc2ee, #b6c8f1, #b2cef1, #afd3f1, #b6dff4, #c1eaf7, #d0f5f9, #e1fffd);
-}
-
 main{
     width: 100%;
-    h1{
-        @include title (center, 0.5em 0 0.5em 0)
+    .p-principal{
+        @include texto ($fuente-cuerpo, $large, 200px, center, $text-color-b);padding: 0em 1em 1.5em 2em;
     }
-    .main__section{
-            padding: 1em 1em 14em 2em;
-            p{
-            @include texto ($fuente-cuerpo, $large, 200, right, $text-color-b);
-            }
+
+    .div-p-secundario{
+        display: flex;
+        justify-content: right;
+    }
+    .p-secundario{
+        @include texto ($fuente-cuerpo, $medium, 0px, right, $resaltar-color);
+        padding: 0.5em 1em 5em 0em;
     }
     
     @keyframes span_animation {
@@ -34,8 +33,12 @@ main{
 }
 
 
+
+
+
+
 /*@media only screen and (min-width: 601px) and (orientation: landscape) {
-    .main__section p{
+    .main__section{
         @include texto ($fuente-cuerpo, $large, 200, right, $text-color-b);
     }
   }*/

@@ -1,32 +1,3 @@
-h2{
-    font-family: 'Rozha One', serif;
-    font-size: 5rem;
-    font-weight: 900px;
-    padding: 0.5em 1em 0.5em 0.5em;
-    color: #d29fe9;   
-    align-self: center;
-}
-
-header{
-    grid-area: header;
-}
-
-.item1{
-    grid-area: item1;
-    padding: 2rem;
-}
-
-.item2{
-    display: grid;
-    grid-template-columns:repeat(1,1fr);
-    grid-template-rows:repeat(4,1fr);
-    grid-area: item2;
-}
-
-.prensa_title{
-    font-size: 4em;
-}
-
 .prensa__section{
     display: flex;
     justify-content: center;
@@ -52,7 +23,7 @@ header{
 
 div p{
     font-family: 'Work Sans', sans-serif;
-    font-size: 1rem ;
+    font-size: 1.5rem ;
 }
 
 h5{
@@ -68,7 +39,7 @@ h5{
    .cta span {
     padding-bottom: 7px;
     letter-spacing: 4px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-right: 15px;
     text-transform: uppercase;
    }
@@ -110,16 +81,4 @@ h5{
     transform-origin: bottom left;
    }
 
-main section article a{
-    font-size: 3em;
-    text-decoration: none;
-    color:#cb99c9;
-}
 
-main section article{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    justify-content:center;
-    align-items: center;
-}

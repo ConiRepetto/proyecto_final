@@ -1,78 +1,47 @@
 
 .nosotras__div__section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex (row, space-around, center, 0);
 }
 
 .nosotras__div__article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center, 1em 0 0 0);
 }
 
 .img_nosotras{
-    width: 20vw;
+    width: 30rem;
     height: auto;
     border-radius: 1rem;
     transition: width 2s, height 2s;
 }
 
-.img_nosotras:hover{
-    width: 25vw;
+@media screen and (max-width: 600px) {
+    .img_nosotras:hover{
+    width: 35rem;
     height: auto;
+    }
 }
 
+
+
 h3{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3rem ;
-    font-weight: 900px;
-    padding: 0.5em;
-    color:white;
+    @include texto ($fuente-cuerpo, $large, 900px, center, $text-color-w);
+    padding-top: 0.5em;
 }
 
 .nosotras__article__bio{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2rem ;
-    color:white;
+    @include texto ($fuente-cuerpo, $small, 900px, center, $text-color-w);
+    padding-top: 0.2em;
 }
 
 .insta__nosotras{
-    font-size: 2rem ;
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    color:#cb99c9;
+    @include texto ($fuente-cuerpo, $medium, 900px, center, $resaltar-color);
+    padding-top: 0.5em;
 }
 .div__colaboradores{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2em;
-}
-
-.article__colaboradores{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (column, left, left, 3em 0 1em 0);
 }
 
 .ul__nosotras{
-    text-align: center;
-}
-
-
-
-
-
-.nosotras__article__bio{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2rem ;
-    color:white;
-}
-
-.ul__nosotras{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2rem ;
-    color:white;
-    list-style: none;
+    @include texto ($fuente-cuerpo, $small, 900px, center, $text-color-w);
+    padding-top: 0.2em;
 }

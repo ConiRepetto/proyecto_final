@@ -1,9 +1,5 @@
 main{
     width: 100%;
-    h2{ 
-        @include texto($fuente-titulos, $xlarge, 500, left, $secundario);
-        padding: 0.5em 1em 0.5em 0.5em;
-    }    
     .div__form{
         display: flex;
         justify-content: center;

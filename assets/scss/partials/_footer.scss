@@ -5,7 +5,7 @@ footer{
 
     footer a{
         @include texto ($fuente-cuerpo, $xsmall, 100, center, $text-color-b);
-        padding: 1.5em 1em 10px 1em;
+        padding: 1em 1em 0.2em 1em;
         text-decoration: none;
         color: $text-color-b;
         &:hover{
@@ -17,7 +17,7 @@ footer{
         display: flex;
         justify-content: center;
         @include texto ($fuente-cuerpo, $xsmall, 100, center, $text-color-b);
-        padding: 1.5em 1em 10px 1em;
+        padding: 1em 1em 0.2em 1em;
     }
 
     .insta_white{
