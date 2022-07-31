@@ -54,26 +54,31 @@
         <div id="title__contacto">
             <h2 class="title__pag">Contactanos</h2>
         </div>
-        <div class="div__form">
-        <div class="col-lg-4 col-sm-10">
-        <form action="./gracias.html" method="post">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="nombre"name="Nombre"/>
-              </div>
-            <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail3" placeholder="nombre@ejemplo.com">
+        <div class="container__form">
+            <div class="div__form">
+            <form action="./gracias.html" method="post">
+                <div class="form__item col-sm-10 col-lg-10">
+                    <label for="nombre" class="form-label  ">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombre"name="Nombre"/>
+                </div>
+                <div class="form__item col-sm-10 col-lg-6">
+                    <label for="inputEmail3" class="form-lebel">Email</label>
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="form__item col-sm-10 col-lg-5">
+                    <label for="phone" class="form-lebel">Telefono</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+                <div class="form__item col-sm-11 col-lg-10">
+                    <label for="consulta" class="form-label">Tu consulta o propuesta laboral:</label>
+                    <textarea type="text" class="consulta form-control" id="fconsulta"> </textarea>
+                </div>
+                <div class="button__concto">  
+                    <button type="submit" class="btn btn-primary css-button-arrow--rose">Enviar</button>
+                </div>
+            </form>
             </div>
-            <div class="mb-3">
-                <label for="consulta" class="form-label">Tu consulta o propuesta laboral:</label>
-                <textarea type="text" class="consulta" id="fconsulta"> </textarea>
-              </div>
-            
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-        </div>
-        </div>
+        </div>    
     </main>
     <footer class=" d-flex justify-content-sm-center justify-content-md-center justify-content-xl-center justify-content-lg-center">
         <a href="./trabaja.html"> Trabaja con Nosotras </a>

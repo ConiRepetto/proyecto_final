@@ -55,32 +55,33 @@
         <div id="main__title__trabaja">
             <h2>Sumate al Equipo de BEBAS</h2>
         </div>
-        <div class="div__trab">
-            <section class="trabaja__form">
-                <form action="./gracias.html" method="post">
-                    <div>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre" name="Nombre"/> 
-                    </div>
-                    <div>    
-                        <label for="email">Mail de Contacto</label>
-                        <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com"/>
-                    </div>
-                    <div>  
-                        <label for="CV">Dejanos tu CV</label>
-                        <input type="text" id="CV" name="cv" placeholder="Archivo PDF"/>
-                    </div> 
-                    <div>    
-                        <label for="consulta"> Contanos por que queres trabajar con nostras</label>
-                        <textarea id="consulta" rows="10" cols="50"> </textarea>
-                    </div>
-                    <div>  
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Vaciar">
-                    </div>  
-                </form>
-        </section>
-        </div>
+        <div class="container__form">
+            <div class="div__form__trabaja">
+            <form action="./gracias.html" method="post">
+                <div class="form__item col-sm-10 col-lg-7">
+                    <label for="nombre" class="form-label  ">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombre"name="Nombre"/>
+                </div>
+                <div class="form__item col-sm-10 col-lg-6">
+                    <label for="inputEmail3" class="form-lebel">Mail de Contacto</label>
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="form__item col-sm-10 col-lg-6">
+                    <label for="CV" class="form-lebel">Dejanos tu CV:</label>
+                    <input type="text" id="CV" name="CV" placeholder="Archivo PDF"class="form-control">
+                </div>
+                <div class="form__item col-sm-11 col-lg-10">
+                    <label for="consulta" class="form-label">Contanos por que queres trabajar con nostras:</label>
+                    <textarea type="text" class="form-control" id="consulta"> </textarea>
+                </div>
+                <div class="buttons__trabaja">  
+                    <button type="submit" class="btn btn-primary css-button-arrow--sky">Enviar</button>
+                </div>  
+                
+                
+            </form>
+            </div>
+        </div>   
     </main>
     <footer class="back__nosotras d-flex justify-content-sm-center justify-content-md-center justify-content-xl-center justify-content-lg-center">
         <a href="./trabaja.html"> Trabaja con Nosotras </a>
